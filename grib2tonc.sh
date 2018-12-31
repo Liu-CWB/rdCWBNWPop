@@ -1,4 +1,15 @@
 #!/bin/bash
+tody=$(date +"%Y%m%d%H")
+echo $tody
+initial=${tody:0:8}
+echo $initial
+if [ -d "/home/louis/${initial}" ]; then
+    echo "exist"
+else
+    mkdir "/home/louis/${initial}"
+fi
+
+
 path="/home/chimin64/CWB_WRF/dpws_cwb/201810_nc"
 varname=( "wu" "wv" )
 yy=2018
