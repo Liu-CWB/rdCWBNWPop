@@ -1,0 +1,2 @@
+#For crontab
+* * * * * bash /path/to/excutefile > /path/to/store/log 2>&1
